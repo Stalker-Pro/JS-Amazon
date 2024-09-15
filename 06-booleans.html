@@ -8,13 +8,29 @@
 </head>
 
 <body>
-  
+ 
+  <button onclick="
+    console.log(canDrive);
+    "></button>
   
   <script>
+  let age = 16;
 
-  console.log(typeof 'true');
+  console.log(3 < 5);
 
+  console.log(5 == '5.00');
+  
+  console.log(5 === '5.00');
+  
+  if(age >= 16){
+    console.log(`You can Drive ${age}`);
+  } else if (age >= 15) {
+    console.log('Remain one year')
+  } else{
+    console.log(`You can't Drive ${age}`);
+  }
   </script>
+  
 </body>
 
 
