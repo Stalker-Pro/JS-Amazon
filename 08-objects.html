@@ -31,12 +31,19 @@
     console.log(product2.rating['stars']);
     product2.fun();
 
-    console.log(typeof console.log)
+    console.log(typeof console.log);
+  
+    console.log(JSON.stringify(product2)); /////конвертация в JSON
+
+    const jsonString = (JSON.stringify(product2));
+    console.log(JSON.parse(jsonString)); ///конвертация в JS
+  
   </script>
 
 </body>
 
 </html>
+
 <!-- // const product = {
   //   name:'socks',
   //   price: 1050
