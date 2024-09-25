@@ -10,7 +10,14 @@
 
 
   <script>
+    const arr = [1, 2, 3];
 
+    [arr[0], arr[2]] = [arr[2], arr[0]];
+    console.log(arr);
+
+
+
+    /*
     const product2 = {
       name: 'shirt',
       'delivery-time': '1 day',
@@ -37,7 +44,54 @@
 
     const jsonString = (JSON.stringify(product2));
     console.log(JSON.parse(jsonString)); ///конвертация в JS
-  
+  */
+
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+
+    const object1 = {
+      message:'hello'
+    };
+
+    const object2 = object1;
+
+    object1.message = 'Good job';
+    console.log(object1);
+    console.log(object2);
+
+    const object3 = {
+      message:'Good job'
+    };
+
+    console.log(object3 === object1);
+    console.log(object2 === object1);
+
+
+    const object4 = {
+      message:'Good job',
+      price: 799
+    };
+
+    //const message = object4.message;
+    const {message, price} = object4;
+    console.log(price);
+    console.log(price);
+    
+    const object5 ={
+      //message: message
+      message,
+      // method: function fun(){
+      //   console.log('method');
+      // }
+
+      method(){
+        console.log('method');
+      }
+    };
+
+    console.log(object5);
+    object5.method();
+
   </script>
 
 </body>
