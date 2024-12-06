@@ -6,6 +6,7 @@
   <title>Todo List</title>
 
   <link rel="stylesheet" href="styles/style10dom-proj.css">
+  <link rel="stylesheet" href="./styles/11-todo-list.css">
 </head>
 
 <script defer src="./JS code/11-todo-list.js"></script>
@@ -13,21 +14,33 @@
 <!-- ----------  8:55:34 ---------- -->
 
   <body>
-    <p>Todo List</p>
-    <input placeholder="Todo name" type="text" class="js-name-input" onkeydown="keyEnter(event)">
-    <input type="date" class="js-due-date-iput" onkeydown="keyEnter(event)">
-    <button onclick="
+  <p>Todo List</p>
+
+
+  <form onsubmit="addTodo()" class="todo-input-grid">    
+    <input required placeholder="Todo name"
+      type="text" class="js-name-input name-input">
+    <input required type="date" class="js-due-date-iput due-date-input">
+    <button class="add-todo-button" onclick="
     addTodo();
-    "> Add </button> 
-    <button onclick="
-    clearTodoList();
-    ">Clear</button>
-    
-    <div class="todo-list">
+  "> Add </button> 
 
-    </div>
+    <button class="add-todo-clear" onclick="
+  clearTodoList();
+  ">Clear</button>
+  </form>
 
-  </body>
+
+
+
+  
+  
+
+  <div class="todo-list todo-grid">
+
+  </div>
+
+</body>
 
 </html>
 
